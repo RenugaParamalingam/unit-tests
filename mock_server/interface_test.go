@@ -47,6 +47,6 @@ func TestUser(t *testing.T) {
 
 	msg, err := client.GreetUser(userId)
 	assert.NoError(t, err)
-	assert.Equal(t, "Hello 666", msg)
+	assert.Equal(t, "Hello 66", msg)
 
 }
