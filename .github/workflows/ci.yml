@@ -31,9 +31,9 @@ jobs:
       # - name: Install all Go dependencies
       #   run: go get
 
-      # step 4: build
-      - name: build
-        run: go build -mod=vendor -race -v .
+      # # step 4: build
+      # - name: build
+      #   run: go build -mod=vendor -race -v .
 
       # step 5: run test
       - name: go test
