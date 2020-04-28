@@ -28,9 +28,13 @@ jobs:
         uses: actions/checkout@v2
 
       # step 3: install dependencies
-      # - name: Install all Go dependencies
-      #   run: go get
+      - name: Install all Go dependencies
+        run: go get
 
-      # step 4: run test
+      # step 4: build
+      - name: build
+        run: go build -mod=vendor -race -v .
+
+      # step 5: run test
       - name: go test
         run: go test
