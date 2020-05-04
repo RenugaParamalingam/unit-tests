@@ -11,7 +11,7 @@ import (
 )
 
 func TestUser(t *testing.T) {
-	userId := "666"
+	userId := "66"
 
 	// Mock http server
 	ts := httptest.NewServer(
